@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <link rel="stylesheet" href="src/style/style.css">
+        <link rel="stylesheet" href="src/style/formulario.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <h1 class="cabecalho__titulo">Meu primeiro formulário com HTML</h1>
+            <div>
+                <nav class="menu">
+                    <ul class="menu__lista">
+                        <li class="menu__item"><a href="index.html" class="menu__lista_link">Home</a></li>
+                        <li class="menu__item"><a href="formulario.html" class="menu__lista_link">Formulário</a></li>
+                        <li class="menu__item"><a href="#" class="menu__lista_link">Informações</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <form class="formulario" method="post" autocomplete="on">
+            <div>
+                <h1 class="formulario__titulo">Formulário de inscrição</h1>
+                <h2 class="formulario__subtitulo">Preencha seus dados</h2>
+            </div>
+            <div class="formulario__display">
+                <div class="field">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" class="input" autocomplete="name" required>
+                </div>
+                <div class="field">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" class="input" autocomplete="name" required>
+                </div>
+                <div class="field">
+                    <label for="nasc">Data de nascimento:</label>
+                    <input type="date" id="nasc" name="nasc" placeholder="Digite sua data de nascimento" class="input" autocomplete="name" required>
+                </div>
+                <div class="field">
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" name="celular" placeholder="Telefone: (xx) xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" autocomplete="tel" class="input" required>
+                </div>
+                <div class="field">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" class="input" autocomplete="email" required>
+                </div>
+                <div class="field">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" class="input" autocomplete="address-level1" required>
+                </div>
+                <div class="field">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" class="input" autocomplete="postal-code" required>
+                </div>  
+                <div>
+                    <input type="submit" value="Enviar" class="enviar">
+                    <input type="reset" value="Limpar" class="enviar">
+                </div>
+            </div>
+        </form>
+        <script src="src/js/index.js"></script>
+    </body>
+</html>
