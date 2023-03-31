@@ -19,11 +19,24 @@ body {
 .cabecalho {
     background-color: var(--cor-de-header);
     text-align: center;
+    display: flex;
+}
+
+.cabecalho__logo {
+    margin: 1% 25% 0 1%;
+}
+
+.logo {
+    width: 150px;
+    height: 100px;
+    /* margin: 1% 25% 0 1%; */
+    border-radius: 10px;
 }
 
 .cabecalho__titulo {
     color: #FFFFFF;
     padding: 2rem 0;
+    align-self: center;
 }
 
 
