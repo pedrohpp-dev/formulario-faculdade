@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-.cabecalho__logo__formulario {
-    margin: 1% 22% 0 1%;
-}
-
 .formulario {
     position: absolute;
     left: 50%;
